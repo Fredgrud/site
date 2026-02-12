@@ -29,7 +29,8 @@
         <h2>Sobre mim</h2>
 
         <img src="https://scontent.ffln1-1.fna.fbcdn.net/v/t1.6435-1/38696855_1647313948710919_1219648447229984768_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=111&ccb=1-7&_nc_sid=1d2534&_nc_eui2=AeESmeG6M0k8wM9PBcCiayN5cxnbKFu-GShzGdsoW74ZKF2R8BU_KohtiSEDlLUE_zHg81jbCgQ6utxiknbkIERu&_nc_ohc=Ji6vMhdoZeIQ7kNvwFKWwd6&_nc_oc=Adk4Z4ZM9PaRPFNF0LKD41UdoANlwYqV1hSDr5hcQZQvSclgS5lFVENA3M2OQm-4GXM74aKilWjlpzwoBb5z74z0&_nc_zt=24&_nc_ht=scontent.ffln1-1.fna&_nc_gid=e8bdWl6-FjBZ8vDdQj8FzA&oh=00_AfsdHy8Ipfkn0z7yBYuZoYZD75Ue74em6XuyPb2CE4CHEw&oe=69B4602D"
-            alt="Foto do perfil" title="Imagem do perfil"> <!-- Imagem de perfil, src carrega imagem e alt carrega alternativa -->
+            alt="Foto do perfil" title="Imagem do perfil">
+        <!-- Imagem de perfil, src carrega imagem e alt carrega alternativa -->
         <!--src="nomePasta/image.png" para indicar o caminho da pasta de imagens no computador-->
         <!--O atributo title faz aparecer o texto ao passar o mouse sobre a imagem-->
 
@@ -67,12 +68,44 @@
     </section>
     <footer> <!-- Rodapé do site -->
         <p>© 2026 Fernando Pereira. Todos os direitos reservados.</p>
-
         <section id="Contato">
 
             <h2>Contato</h2>
 
             <p>Tem um projeto em mente? Entre em contato comigo!</p>
+
+            <form action="">
+                <!-- Formulário de contato, action="" indica para onde os dados do formulário serão enviados -->
+
+                <label for="nome">Nome:</label>
+                <!-- Label é a etiqueta do campo, for="nome" associa o label ao campo de input com id="nome" -->
+                <input type="text" id="nome" name="nome" required> <br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required> <br>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone"> <br>
+
+                <label for="assunto">Assunto:</label>
+                <select name="assunto" id="assunto"> <br>
+                    <option value="orcamento">Orçamento</option> <br>
+                    <option value="duvida">Dúvida</option> <br>
+                    <option value="outro">Outro</option>
+                </select> <!--Não esquecer do select-->
+
+                <label for="mensagem">Mensagem</label>
+                <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea> <br>
+                <!-- Inserindo caixa de texto e definindo tamando da caixa-->
+
+                <input type="checkbox" id="inscricao" name="inscricao">
+                <label for="inscricao">Deseja receber novidades por email?</label> <br>
+
+                <input type="submit" value="Enviar mensagem"> <!-- Botão de envio do formulário -->
+
+
+
+            </form>
 
             <address>
 
@@ -82,6 +115,7 @@
                 </p>
 
             </address>
+
         </section>
 
     </footer>
